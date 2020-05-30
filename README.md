@@ -1,174 +1,63 @@
-# neural_SGD.py
+#Name （neural_SGD.py）
 SGD、確率的勾配降下法とよばれる機械学習で使われる最も一般的な学習率で(pythonで始める機械学習１利用）日経平均が次の日に1%以下で上がるか、1%以下で下がるか、それともそれ以上、もしくはそれ以下で動くかを4値分析を用いて結果を出す。
 
-# DEMO
+# 特徴
 
-"hoge"の魅力が直感的に伝えわるデモ動画や図解を
+ネットではkaras、tensorflowを用いたものなどは存在しているが、そのため開発環境に依存している。一方こちらはkarasなど深層学習の開発pakageをほぼ用いないためエラーの原因がバージョンなどということは少ないと考えられる。また、テクニカル指標を組み込んでみようと、平均線などを導入した。
 
-# Features
+# 開発環境
+とりあえず、自分の開発環境
 
-"hoge"のセールスポイントや差別化などを説明する
+* python 3.7
+* anaconnnda 3
+*spyder
+# インストール
 
-# Requirement
+anaconda3、pythonのインストールを行う
 
-"hoge"を動かすのに必要なライブラリなどを列挙する
-
-* huga 3.5.2
-* hogehuga 1.0.2
-
-# Installation
-
-Requirementで列挙したライブラリなどのインストール方法を説明する
+必要なものはnumpy、 matplotlib、csv、timeなので
+anaconda promptを開いて
 
 ```bash
-pip install huga_package
+conda install numpy
 ```
+"""
+numpyのところにmatplotlibなど名前変えていれる
 
-# Usage
 
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
 
-```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
-```
+# Name（result.py）
+ 
+上のnural_SGD.pyを実行した後、これを実行することで、実際に次の日の4値の結果が表示される 
 
-# Note
 
-注意点などがあれば書く
+
+# Name（0526closex-data.csv）
+
+読み込みのデータ1 
+
+一列目に日付、二列目に前日との差を対数表時にしたもの。
+
+
+
+# Name（0526closet-data.csv）
+読み込みデータ２
+
+一列に日付その後は次の日の4値分類した結果
+
+
+# Name（teqniq-diff.csv)
+読み込みデータ3
+
+一列目日付
+その後に5日平均線、25日平均線、75日平均線,200日平均線を組み込む
+
+
+
 
 # Author
 
-作成情報を列挙する
-
 * 作成者
-* 所属
+Inoue akito
 * E-mail
-
-# License
-ライセンスを明示する
-
-"hoge" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
-
-社内向けなら社外秘であることを明示してる
-
-"hoge" is Confidential.
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-# Name（リポジトリ/プロジェクト/OSSなどの名前）
- 
-分かりやすくてカッコイイ名前をつける（今回は"hoge"という名前をつける）
- 
-"hoge"が何かを簡潔に紹介する
- 
-# DEMO
- 
-"hoge"の魅力が直感的に伝えわるデモ動画や図解を載せる
- 
-# Features
- 
-"hoge"のセールスポイントや差別化などを説明する
- 
-# Requirement
- 
-"hoge"を動かすのに必要なライブラリなどを列挙する
- 
-* huga 3.5.2
-* hogehuga 1.0.2
- 
-# Installation
- 
-Requirementで列挙したライブラリなどのインストール方法を説明する
- 
-```bash
-pip install huga_package
-```
- 
-# Usage
- 
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
- 
-```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
-```
- 
-# Note
- 
-注意点などがあれば書く
- 
-# Author
- 
-作成情報を列挙する
- 
-* 作成者
-* 所属
-* E-mail
- 
-# License
-ライセンスを明示する
- 
-"hoge" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
- 
-社内向けなら社外秘であることを明示してる
- 
-"hoge" is Confidential.
+hutatsu0725@gmail.com
